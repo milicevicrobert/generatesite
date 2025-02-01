@@ -354,13 +354,13 @@ def main():
     st.title("Generiranje HTML stranice o firmi")
     
     # Unos podataka
-    company_name = st.text_input("Naziv firme", "Redstart d.o.o.")
-    address = st.text_input("Adresa", "Cebini 28/III, 10010 Zagreb, Hrvatska")
+    company_name = st.text_input("Naziv firme", "Neki novi d.o.o.")
+    address = st.text_input("Adresa", "Cebini 28, 10010 Zagreb, Hrvatska")
     oib = st.text_input("OIB", "13544383037")
-    iban = st.text_input("IBAN", "HR92 2500009 1101429524")
-    director = st.text_input("Direktor", "Robert Miličević")
-    website = st.text_input("Web stranica https:// ", "www.redstart.hr")
-    email = st.text_input("Email", "robert@redstart.hr")
+    iban = st.text_input("IBAN", "HR92 2500009 123456789")
+    director = st.text_input("Direktor", "Pero Perić")
+    website = st.text_input("Web stranica https:// ", "www.conectmarketplace.hr")
+    email = st.text_input("Email", "pero@connectmarketplace.hr")
     
     if st.button("Generiraj HTML"):
         # Kreiranje Jinja2 templatea
